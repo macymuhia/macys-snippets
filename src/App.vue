@@ -1,6 +1,5 @@
 <template>
-  <div id="app" >
-    <img src="./assets/logo-mdb-vue-small.png">
+  <div id="app">
     <router-view/>
   </div>
 </template>
@@ -20,5 +19,21 @@ $image-path: '~@/../mdb/mdbvue/img';
 #app {
   text-align: center;
   margin-top: 150px;
+}
+html, body {
+  background: black;
+  // border: 1px solid red;
+  height: 100vh;
+}
+body {
+  background: black;
+  padding: 1% 15%;
+  // border: 1px groove red;
+  // border-style: groove;
+  height: 100vh;
+}
+.col, .row, .navbar-brand, .footer, .container, .container-fluid {
+    margin: 0px;
+    padding: 0px;
 }
 </style>
