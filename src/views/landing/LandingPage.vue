@@ -38,7 +38,7 @@
             <div class="tabs">
               <div class="tab">
                 <input type="radio" id="rd1" name="rd" />
-                <label class="tab-label" for="rd1">Item 1</label>
+                <label class="tab-label" for="rd1">Landing</label>
                 <div class="tab-content">
                   Lorem, ipsum
                 </div>
@@ -52,7 +52,7 @@
               </div>
               <div class="tab">
                 <input type="radio" id="rd3" name="rd" />
-                <label for="rd3" class="tab-close">Close others &times;</label>
+                <label for="rd3" class="tab-close">Collapse &times;</label>
               </div>
             </div>
           </div>
@@ -87,20 +87,6 @@ export default {
 
   data() {
     return {
-      panes: [
-        {
-          title: "#1",
-          content: `Anim pariatur`,
-        },
-        {
-          title: "#2",
-          content: `Lorem ipsum`,
-        },
-        {
-          title: "#3",
-          content: `Sed ut`,
-        },
-      ],
     };
   },
 
