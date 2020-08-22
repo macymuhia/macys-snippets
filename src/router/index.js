@@ -7,28 +7,32 @@ import JavascriptPage from '@/views/javascript/JavascriptPage';
 
 Vue.use(Router);
 
-export default new Router({
+const routes= [
+  {
+    path: '/',
+    name: 'LandingPage',
+    component: LandingPage
+  },
+  {
+    path: '/java',
+    name: 'JavaPage',
+    component: JavaPage
+  },
+  {
+    path: '/python',
+    name: 'PythonPage',
+    component: PythonPage
+  },
+  {
+    path: '/javascript',
+    name: 'JavascriptPage',
+    component: JavascriptPage
+  },
+]
+
+const router = new Router({
   mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'LandingPage',
-      component: LandingPage
-    },
-    {
-      path: '/java',
-      name: 'JavaPage',
-      component: JavaPage
-    },
-    {
-      path: '/python',
-      name: 'PythonPage',
-      component: PythonPage
-    },
-    {
-      path: '/javascript',
-      name: 'JavascriptPage',
-      component: JavascriptPage
-    },
-  ]
+  routes
 });
+
+export default router
