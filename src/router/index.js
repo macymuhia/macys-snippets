@@ -4,7 +4,7 @@ import LandingPage from '@/views/landing/LandingPage';
 import JavaPage from '@/views/java/JavaPage';
 import PythonPage from '@/views/python/PythonPage';
 import JavascriptPage from '@/views/javascript/JavascriptPage';
-import NotFoundComponent from '@/views/errorpages/NotFoundComponent';
+// import NotFoundComponent from '@/views/errorpages/NotFoundComponent';
 
 Vue.use(Router);
 
@@ -30,7 +30,7 @@ const routes= [
     component: JavascriptPage
   },
   { path: '*',
-  component: NotFoundComponent }
+  component: LandingPage }
 ]
 
 const router = new Router({
